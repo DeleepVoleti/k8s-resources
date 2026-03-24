@@ -1,7 +1,7 @@
 kind: Pod 
 apiVersion: v1
 metadata:
-  names: expense1
+  name: expense1
   labels:
     env: dev
     ccreated_by: dilip
