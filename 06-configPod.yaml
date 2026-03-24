@@ -2,8 +2,9 @@ kind: Pod
 apiVersion: v1 
 metadata: 
   name: expenseconfig
-  age:
-    valueFrom:
-      configMapKeyRef:
+  labels:
+    age:
+      valueFrom:
+       configMapKeyRef:
         name: expenseconfig
         key: name
