@@ -1,0 +1,12 @@
+kind: Pod 
+ApiVersion: v1
+metadata: 
+  name: expense
+  labels:
+    environment: dev
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+    - name: almalinux
+      image: almalinux
