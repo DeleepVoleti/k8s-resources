@@ -1,0 +1,18 @@
+kind: Pod 
+apiVersion: v1
+metadata:
+  names: expense1
+  labels:
+    env: dev
+    ccreated_by: dilip
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      resources:
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+        requests:
+          memory: "64Mi"
+          cpu: "250m"  
