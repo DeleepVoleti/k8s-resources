@@ -3,8 +3,15 @@ apiVersion: v1
 metadata: 
   name: expenseconfig
   labels:
-    age:
-      valueFrom:
-       configMapKeyRef:
-        name: expenseconfig
-        key: name
+    env: Dev
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      env:
+      - name: age
+        valueFrom:
+          configMapKeyRef:
+            name: expenseconfig
+            key: name
+            
